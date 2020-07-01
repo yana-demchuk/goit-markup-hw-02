@@ -1,4 +1,44 @@
-* {
-  padding: 0;
-  margin: 0;
+:root {
+  --primary-color: #757575;
+  --secondary-color: #212121;
+  --tertiary-color: #000000;
+  --accent-color: #2196f3;
+}
+
+body,
+.contact {
+  color: var(--primary-color);
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Шапка */
+.accent,
+.link:hover,
+.link:focus,
+.link[href="./index.html"],
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+.link,
+.features,
+h2,
+h3 {
+  color: var(--secondary-color);
+}
+
+.logo {
+  color: var(--tertiary-color);
+}
+
+button {
+  color: #ffffff;
+  background-color: #2196f3;
 }
