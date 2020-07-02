@@ -1,13 +1,18 @@
 :root {
-  --primary-color: #757575;
-  --secondary-color: #212121;
-  --tertiary-color: #000000;
+  --primary-text-color: #757575;
+  --title-color: #212121;
+  --primary-logo-color: #000000;
   --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --command-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
 body,
-.contact {
-  color: var(--primary-color);
+.contact,
+.work-type {
+  color: var(--primary-text-color);
 }
 li {
   list-style-type: none;
@@ -21,7 +26,6 @@ a {
 .accent,
 .link:hover,
 .link:focus,
-.link[href="./index.html"],
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
@@ -29,16 +33,32 @@ a {
 
 .link,
 .features,
-h2,
-h3 {
-  color: var(--secondary-color);
+.title,
+.name,
+.project {
+  color: var(--title-color);
 }
 
-.logo {
-  color: var(--tertiary-color);
+.logo.header {
+  color: var(--primary-logo-color);
 }
 
-button {
-  color: #ffffff;
-  background-color: #2196f3;
+.logo.footer {
+  color: var(--primary-white-color);
+}
+
+.contact.footer {
+  color: var(--footer-contact-color);
+}
+
+.order,
+.filter:hover,
+.filter:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.filter {
+  color: var(--title-color);
+  background-color: var(--command-bg-color);
 }
