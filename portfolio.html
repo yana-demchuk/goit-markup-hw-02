@@ -4,39 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div>
+    <!-- Шапка-->
+    <header class="header">
+      <div class="navigation">
         <nav>
-          <a href="./index.html" lang="en" class="logo header"
+          <a href="./index.html" lang="en" class="logo link"
             ><span class="accent">Web</span> Studio</a
           >
-          <ul>
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+          <ul class="navigation-list list">
+            <li class="navigation-list-item">
+              <a href="./index.html" class="navigation-list-item-link link"
+                >Студия</a
+              >
+            </li>
+            <li class="navigation-list-item">
+              <a href="./portfolio.html" class="navigation-list-item-link link portfol"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation-list-item">
+              <a href="" class="navigation-list-item-link link">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
-      <div>
-        <ul>
-          <li>
+      <div class="social-adress">
+        <ul class="social-adress-list list">
+          <li class="social-adress-list-item">
             <a
               href="mailto:info@devstudio.com"
               lang="en"
-              class="contact"
+              class="social-adress-list-item-link link"
               aria-label="иконка почты"
             >
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="social-adress-list-item">
             <a
               href="tel:+380961111111"
-              class="contact"
+              class="social-adress-list-item-link link"
               aria-label="иконка телефона"
             >
               +38 096 111 11 11
@@ -47,109 +62,214 @@
     </header>
 
     <main>
-      <section>
-        <h1 hidden>Портфолио</h1>
-        <div>
-          <ul>
-            <li><button class="filter">Все</button></li>
-            <li><button class="filter">Веб-сайты</button></li>
-            <li><button class="filter">Приложения</button></li>
-            <li><button class="filter">Дизайн</button></li>
-            <li><button class="filter">Маркетинг</button></li>
+      <section class="portfolio">
+        <h1 hidden>Портфолио работ</h1>
+        <div class="portfolio-filters">
+          <ul class="portfolio-filters-list list">
+            <li class="portfolio-filters-list-item">
+              <button class="filters-btn" type="button">Все</button>
+            </li>
+            <li class="portfolio-filters-list-item">
+              <button class="filters-btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="portfolio-filters-list-item">
+              <button class="filters-btn" type="button">Приложения</button>
+            </li>
+            <li class="portfolio-filters-list-item">
+              <button class="filters-btn" type="button">Дизайн</button>
+            </li>
+            <li class="portfolio-filters-list-item">
+              <button class="filters-btn" type="button">Маркетинг</button>
+            </li>
           </ul>
         </div>
-        <div>
-            <h2 hidden>Примеры работ</h2>
-            <ul>
-                <li>
-                    <img src="./images/portfolio/portfolio-1.jpg" alt="портфолио сайта технокряк" width="370" height="294">
-                    <h3 class="project">Технокряк</h3>
-                    <p class="work-type">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/portfolio-2.jpg" alt="два парня играют в баскетбол" width="370" height="294">
-                    <h3 class="project">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                    <p class="work-type">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/portfolio-3.jpg" alt="логотип ресторана сифуд" width="370" height="294">
-                    <h3 class="project">Ресторан <span lang="en">Seafood</span></h3>
-                    <p class="work-type">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/portfolio-4.jpg" alt="большие наушники" width="370" height="294">
-                    <h3 class="project">Проект <span lang="en">Prime</span></h3>
-                    <p class="work-type">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/portfolio-5.jpg" alt="две коробки" width="370" height="294">
-                    <h3 class="project">Проект <span lang="en">Boxes</span></h3>
-                    <p class="work-type">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/portfolio-6.jpg" alt="монитор компьютера" width="370" height="294">
-                    <h3 lang="en" class="project">Inspiration has no Borders</h3>
-                    <p class="work-type">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/portfolio-7.jpg" alt="разворот журнала" width="370" height="294">
-                    <h3 class="project">Издание <span lang="en">Limited Edition</span></h3>
-                    <p class="work-type">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/portfolio-8.jpg" alt="бирка лаб" width="370" height="294">
-                    <h3 class="project">Проект <span lang="en">LAB</span></h3>
-                    <p class="work-type">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/portfolio-9.jpg" alt="парень печатает на ноутбуке" width="370" height="294">
-                    <h3 lang="en" class="project">Growing Business</h3>
-                    <p class="work-type">Приложение</p>
-                </li>
-            </ul>
+        <div class="portfolio-example">
+          <ul class="portfolio-example-list list">
+            <li class="portfolio-example-list-item">
+              <img
+              class="portfolio-example-list-item-img"
+                src="./images/portfolio/portfolio-1.jpg"
+                alt="портфолио сайта технокряк"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-example-list-item-project">Технокряк</h2>
+              <p class="portfolio-example-list-item-type">Веб-сайт</p>
+              <p class="portfolio-example-list-item-backend">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            шпионажа и атак на защищённые сервера конкурентов.</p>
+            </li>
+            <li class="portfolio-example-list-item">
+              <img
+              class="portfolio-example-list-item-img"
+                src="./images/portfolio/portfolio-2.jpg"
+                alt="два парня играют в баскетбол"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-example-list-item-project">
+                Постер <span lang="en">New Orlean vs Golden Star</span>
+              </h2>
+              <p class="portfolio-example-list-item-type">Дизайн</p>
+              <p class="portfolio-example-list-item-backend"></p>
+            </li>
+            <li class="portfolio-example-list-item">
+              <img
+              class="portfolio-example-list-item-img"
+                src="./images/portfolio/portfolio-3.jpg"
+                alt="логотип ресторана сифуд"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-example-list-item-project">Ресторан <span lang="en">Seafood</span></h2>
+              <p class="portfolio-example-list-item-type">Приложение</p>
+              <p class="portfolio-example-list-item-backend"></p>
+            </li>
+            <li class="portfolio-example-list-item">
+              <img
+              class="portfolio-example-list-item-img"
+                src="./images/portfolio/portfolio-4.jpg"
+                alt="большие наушники"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-example-list-item-project">Проект <span lang="en">Prime</span></h2>
+              <p class="portfolio-example-list-item-type"">Маркетинг</p>
+              <p class="portfolio-example-list-item-backend"></p>
+            </li>
+            <li class="portfolio-example-list-item">
+              <img
+              class="portfolio-example-list-item-img"
+                src="./images/portfolio/portfolio-5.jpg"
+                alt="две коробки"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-example-list-item-project">Проект <span lang="en">Boxes</span></h2>
+              <p class="portfolio-example-list-item-type">Приложение</p>
+              <p class="portfolio-example-list-item-backend"></p>
+            </li>
+            <li class="portfolio-example-list-item">
+              <img
+              class="portfolio-example-list-item-img"
+                src="./images/portfolio/portfolio-6.jpg"
+                alt="монитор компьютера"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-example-list-item-project">Inspiration has no Borders</h2>
+              <p class="portfolio-example-list-item-type">Веб-сайт</p>
+              <p class="portfolio-example-list-item-backend"></p>
+            </li>
+            <li class="portfolio-example-list-item">
+              <img
+              class="portfolio-example-list-item-img"
+                src="./images/portfolio/portfolio-7.jpg"
+                alt="разворот журнала"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-example-list-item-project">
+                Издание <span lang="en">Limited Edition</span>
+              </h2>
+              <p class="portfolio-example-list-item-type">Дизайн</p>
+              <p class="portfolio-example-list-item-backend"></p>
+            </li>
+            <li class="portfolio-example-list-item">
+              <img
+              class="portfolio-example-list-item-img"
+                src="./images/portfolio/portfolio-8.jpg"
+                alt="бирка лаб"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-example-list-item-project">Проект <span lang="en">LAB</span></h2>
+              <p class="portfolio-example-list-item-type">Маркетинг</p>
+              <p class="portfolio-example-list-item-backend"></p>
+            </li>
+            <li class="portfolio-example-list-item">
+              <img
+              class="portfolio-example-list-item-img"
+                src="./images/portfolio/portfolio-9.jpg"
+                alt="парень печатает на ноутбуке"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-example-list-item-project" lang="en">Growing Business</h2>
+              <p class="portfolio-example-list-item-type">Приложение</p>
+              <p class="portfolio-example-list-item-backend"></p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div>
-        <a href="/index.html" lang="en" class="logo footer"
+    <!--Подвал-->
+    <footer class="footer">
+      <div class="contacts">
+        <a href="./index.html" lang="en" class="logo link"
           ><span class="accent">Web</span> Studio</a
         >
-        <ul>
-          <li>
-            <address>г. Киев, пр-т Леси Украинки, 26</address>
+        <ul class="contacts-list list">
+          <li class="contacts-list-item">
+            <address class="contacts-list-item-adress">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
           </li>
-          <li>
-            <address>
-              <a href="mailto:info@example.com" lang="en" class="contact footer"
+          <li class="contacts-list-item">
+            <address class="contacts-list-item-adress">
+              <a
+                class="contacts-list-item-adress-link link"
+                href="mailto:info@example.com"
+                lang="en"
                 >info@example.com</a
               >
             </address>
           </li>
-          <li>
-            <address>
-              <a href="tel:+380991111111" class="contact footer"
+          <li class="contacts-list-item">
+            <address class="contacts-list-item-adress">
+              <a
+                class="contacts-list-item-adress-link link"
+                href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
             </address>
           </li>
         </ul>
       </div>
-      <div>
-        <b>присоединяйтесь</b>
-        <ul>
-          <li>
-            <a href="" target="_blank" aria-label="ссылка на инстаграмм"></a>
+      <div class="socials">
+        <b class="appeal">присоединяйтесь</b>
+        <ul class="socials-list list">
+          <li class="socials-list-item">
+            <a
+              class="socials-list-item-link"
+              href=""
+              target="_blank"
+              aria-label="ссылка на инстаграмм"
+            ></a>
           </li>
-          <li>
-            <a href="" target="_blank" aria-label="ссылка на твиттер"></a>
+          <li class="socials-list-item">
+            <a
+              class="socials-list-item-link"
+              href=""
+              target="_blank"
+              aria-label="ссылка на твиттер"
+            ></a>
           </li>
-          <li>
-            <a href="" target="_blank" aria-label="ссылка на фейсбук"></a>
+          <li class="socials-list-item">
+            <a
+              class="socials-list-item-link"
+              href=""
+              target="_blank"
+              aria-label="ссылка на фейсбук"
+            ></a>
           </li>
-          <li>
-            <a href="" target="_blank" aria-label="ссылка на линкедин"></a>
+          <li class="socials-list-item">
+            <a
+              class="socials-list-item-link"
+              href=""
+              target="_blank"
+              aria-label="ссылка на линкедин"
+            ></a>
           </li>
         </ul>
       </div>
